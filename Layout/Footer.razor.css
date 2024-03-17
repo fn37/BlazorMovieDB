@@ -1,0 +1,17 @@
+﻿﻿.footerStyle {
+    background-color: var(--mdb-theme-900);
+    color: var(--mdb-light-color);
+}
+
+.footerStyle a {
+    color: var(--mdb-theme-200);
+}
+
+    .footerStyle a:hover {
+        color: var(--mdb-theme-core);
+    }
+
+.footerStyle .bi {
+    font-size: 1.5rem;
+    padding-inline-start: 0.5rem;
+}

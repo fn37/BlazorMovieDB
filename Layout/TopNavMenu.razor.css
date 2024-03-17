@@ -1,0 +1,7 @@
+﻿﻿.navStyle {
+    background-color: var(--mdb-theme-900);
+}
+
+.navbar-nav {
+    --bs-navbar-hover-color: var(--mdb-theme-400);
+}
