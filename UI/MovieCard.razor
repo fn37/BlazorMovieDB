@@ -17,11 +17,12 @@
         <div class="card-body border-top bg-light">
             <h5 class="card-title">@Movie.Title</h5>
             <p class="card-text">
-                @DateTime.Parse(Movie.ReleaseDate).ToString("dd MMMM, yyyy");
+                <h6 class="card-subtitle mb-2 text-muted">Release Date: </h6>
+                @DateTime.Parse(Movie.ReleaseDate).ToString("dd MMMM, yyyy")
             </p>
         </div>
         <div class="card-footer text-end">
-            <a class="btn btn-primary" href="/">Details</a>
+            <a class="btn btn-primary" href="/movie/@Movie.Id">Details</a>
         </div>
     </div>
 }
