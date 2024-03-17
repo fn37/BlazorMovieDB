@@ -52,7 +52,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     --bs-btn-active-border-color: var(--mdb-theme-800);
 }
 
-
+button:disabled,
+button[disabled] {
+    background-color: var( --mdb-theme-200) !important;
+    border-color: var(--mdb-theme-200) !important;
+}
 
 /* #region Blazor Default Styles */
 
@@ -114,7 +118,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     }
 
         .loading-progress circle:last-child {
-            stroke: #1b6ec2;
+            /*stroke: #1b6ec2;*/
+            stroke: var(--mdb-theme-600);
             stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
             transition: stroke-dasharray 0.05s ease-in-out;
         }
